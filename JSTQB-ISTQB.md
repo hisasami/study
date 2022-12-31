@@ -56,6 +56,8 @@
 
 #### エラー、欠陥、故障
 
+A person can make an error(mistake), which can lead to the introduction of a defect (fault or bug) in the software core or in some other related work product.
+
 - エラー（誤り）
   - 間違った結果を生み出す人間の行為
     - 勘違い、思い込み、誤解
@@ -67,9 +69,9 @@
   - 期待結果の記載が違う場合は偽陽性
     - 偽陰性に気を付ける
 
-### 1.2 テストの必要性
-
 ### 1.3 テストの7原則
+
+exhaustive, testing everything, is impossible.
 
 #### トレーサビリティ
 
@@ -97,10 +99,44 @@
 
 - テスト条件と、そのもととなるテストベースとトレーサビリティをとっておく
 - テスト条件自体の過不足を確認できるようにしておく
-  
-### 1.5 テストの心理学
 
 ## 第2章 開発ライフサイクル全体を通してのテスト
+
+### 2.1.1
+
+in ANY software development lifecycle model,
+
+- for every development activity, there is a corresponding test activity
+- each test level has test objectives to that level
+- test analysis and design for a given test level begin during the corresponding development activity
+- testers participate in discuttions
+  - define/refine requirements
+  - design
+  - reviewing work products asa drafts are available
+
+#### lifecycle model
+
+- sequential development model
+  - development process as a linear/sequential flow
+  - next phase starts after previous phase gets completed
+  - no overlap phase
+  - beneficial to have early feedback from following phase
+- waterfall model
+  - activities are completed one after another
+  - test activities only occur after all other development activities
+- V-model
+  - integrates the test process throughout the dev process
+    - implement the principle of early testing
+  - includes test levels associated with each corresponding dev phase
+    - supports early testing
+  - execution of tests associated with each test level proceeds sequantially but in some cases overlapping occurs
+- Incremental dev
+  - irequirements/design/build/testing establihed in pieces
+    - software's features grow incrementally(=徐々に)
+- Iterative dev (=反復)
+  - group of features are specified ~ tested in a series of cycles
+  - each iteration delivers working software
+    - growing *subset* of the overall set of features until final
 
 ### テストの種類
 
@@ -120,11 +156,11 @@
   - 運用受入テスト
   - 契約・規制による受入テスト
 
-- 機能テスト（what）
+- 機能テスト（*what*）
   - 必要になる知識
     - ソフトウェアが解決する特定のビジネス問題
     - ソフトウェアが果たす役割
-- 非機能テスト（how）
+- 非機能テスト（*how*）
   - 計測可能な項目（例：応答時間）
   - 評価可能な値（例：3秒）
   - テストの種類
