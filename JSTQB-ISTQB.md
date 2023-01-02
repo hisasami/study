@@ -205,6 +205,17 @@ in ANY software development lifecycle model,
 
 ↔  動的テスト（dynamic testing）
 
+### 静的テストで見つけやすい欠陥
+
+- requirement defects
+  - inconsistencies, ambiguities, contradictions, omissions, inaccuracies, redundancies
+- desigin defects
+- coding defects
+- deviations from standards
+- incorrect interface specifications
+- security vulneravilities
+- gaps or inaccuracies in test basis traceability or coverage
+
 ### レビュー技法の適用
 
 - アドホック
@@ -215,6 +226,34 @@ in ANY software development lifecycle model,
 - ロールベース
   - パースペクティブベース
     - ロールベースの一つ。要件や技術的な作業成果物の場合など
+
+#### 3.2.2 roles and responsibilities
+
+- author
+  - creates the work product
+  - fixes defects in the work product
+- management
+  - responsible
+    - review planning
+    - review execution
+  - monitors ongoing cost-effectiveness
+  - executes control decisions
+- facilitator (moderator)
+  - ensure
+    - effective review meeting
+  - mediates between the various points of view
+  - success of the review depends on them
+- review leader
+  - responsible
+    - overall of the review
+  - review member, organize
+- reviewers
+  - experts, people working on the project, stakeholders
+  - identify defects
+  - deffirent perspective
+- scribe (recorder)
+  - collate potential defects
+  - records new potntial defect
 
 ## 第5章 テストマネジメント
 
@@ -334,3 +373,26 @@ in ANY software development lifecycle model,
   - テスト実行時の状況にあわせて行う
   - 探索的テストはここ
   
+### 第6章
+
+#### テストツールの分類
+
+- management
+  - test / application lifecycle (ALM)
+  - requirements
+  - refect
+  - configuration
+  - continuous integration
+- tool support for static testing
+  - static analysis
+- tool support for test design and implementation
+  - create the maintainable work products in test design, implementation, test cases, test procedures, test data.
+    - model-based testing
+    - test data preparation
+- test execution and logging
+  - test execution
+  - coverage
+  - test harness
+- performance measurement and dynamic analysis
+  - performance testing
+  - dynamic analysis toolss
