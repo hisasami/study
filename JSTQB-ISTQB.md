@@ -100,6 +100,11 @@ exhaustive, testing everything, is impossible.
 - テスト条件と、そのもととなるテストベースとトレーサビリティをとっておく
 - テスト条件自体の過不足を確認できるようにしておく
 
+### keywords
+
+- reverse engineering
+  - a process for determining the source code from the object code
+
 ## 第2章 開発ライフサイクル全体を通してのテスト
 
 ### 2.1.1
@@ -148,6 +153,7 @@ in ANY software development lifecycle model,
   - 非機能テスト
   - ホワイトボックステスト
   - リグレッションテスト
+  - *regression = デグレ*
 目的：内在する欠陥を検出する、機能的/非機能的？振る舞いが設計及び仕様通りである、品質が信頼できるものである、など  
 仕様書、設計書などをもとに作成する  
 
@@ -203,7 +209,7 @@ in ANY software development lifecycle model,
 
 ## 第3章 静的テスト（static testing）
 
-↔  動的テスト（dynamic testing）
+↔  動的テスト（dynamic testing）: error guessing 含む
 
 ### 静的テストで見つけやすい欠陥
 
@@ -332,6 +338,13 @@ in ANY software development lifecycle model,
 - 実施中のテスト対象の品質
 - テストアプローチの十分性
 - テスト目的に対するテスト活動の効果
+
+- metrics-based
+  - metrics of former similar projects
+  - typical values
+- expert-based
+  - experience of the owners of the testing tasks
+  - by experts
 
 #### メトリクス例
 
