@@ -2,16 +2,10 @@
   text-align: center;
 }
 
-.btn {
-  background-color: white;
-  color: black;
-  border: 1px black solid;
-  padding: 10px 40px;
-  margin: 50px 0;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.btn.float:hover {
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+.rect {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: orangered;
+  transform: translate(50px);
 }/*# sourceMappingURL=style.css.map */
